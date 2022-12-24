@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/heading"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColorHighlight="@color/black"
+        android:background="@drawable/titlestyle"
+        android:textColor="#022930"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/kilograms_navbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilograms"
+            android:width="105dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/buttonstyle"/>
+
+        <Button
+            android:id="@+id/pounds_navbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pounds"
+            android:width="105dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/buttonstyle"/>
+
+        <Button
+            android:id="@+id/grams_navbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grams"
+            android:width="105dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/buttonstyle"/>
+
+        <Button
+            android:id="@+id/tonnes_navbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tonnes"
+            android:width="105dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@drawable/buttonstyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="625dp"
+        android:orientation="vertical">
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="botarmy.example.unitcon.Kgfragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
